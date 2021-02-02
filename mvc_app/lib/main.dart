@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mvc_app/views/homepage.dart';
+import 'package:mvc_app/views/calculator.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(Application());
 
-class MyApp extends StatelessWidget {
+class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue
       ),
-      home: new HomePage()
+      home: new Calculator()
     );
   }
 }
